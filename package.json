@@ -1,0 +1,43 @@
+{
+  "name": "data-normalize",
+  "version": "0.1.0",
+  "description": "Library to normalize data structure changes",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "build": "npm test && npx unbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fajarbc/data-normalize.git"
+  },
+  "keywords": [
+    "data",
+    "normalization",
+    "normalize"
+  ],
+  "author": "fajarbc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fajarbc/data-normalize/issues"
+  },
+  "homepage": "https://github.com/fajarbc/data-normalize#readme",
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "unbuild": "^0.8.11"
+  },
+  "dependencies": {
+    "object-path": "^0.11.8"
+  }
+}
